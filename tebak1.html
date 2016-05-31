@@ -1,0 +1,54 @@
+<html>
+<title>Tebak Lagu</title>
+<head>
+<style type="text/css">
+.wrap1{
+	width:auto;
+	
+	background:url("./Image/Date ALive3.jpg") repeat;
+	margin:0 auto;
+	height: 800px;
+}
+
+.so{
+margin:10px 20px 0px 450px;
+font-size:25;
+}
+.se{
+font-size:25;
+}
+.lg{
+	margin-left: 500px;
+	margin-top: 200px;
+}
+</style>
+<script language="javascript">
+function check(form)
+{if(form.sot.value=="kurumi" )
+{
+alert("iya,benar sekali.Itu adalah Kurumi");
+location="tebak2.html"
+}
+else if(form.sot.value!="kurumi" )
+{
+{alert("Salah")
+form.sat.value="";
+
+}
+
+}
+}
+</script>
+</head>
+<body>
+<div class="wrap1">
+<audio controls class="lg">
+<source src="sweet ARMS - Key of Truth.mp3" type="audio/mpeg">
+</audio>
+<form>
+<input type="text" name="sot" class="so" size="25">
+<input type="button" name="but" class="se"value="check" size="1"onclick="check(this.form)">
+</form>
+</div>
+</body>
+</html>
